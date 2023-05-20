@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:black;
+  color:black;
+}
+
+h1{color: white;}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color:rgba(173, 216, 230, 0.541);
+}
+
+#result-container {
+  display: none;
+  margin-top: 50px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  background-color:whitesmoke;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+
+
+#question{
+  font-weight: bold;
+  color: white;
+}
+
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.correct {
+  background-color: #50b83c;
+  color: #fff;
+}
+
+.wrong {
+  background-color: #e64a4a;
+  color: #fff;
+}
+
+#result-message.correct {
+  color: #50b83c;
+  font-weight: bold;
+}
+
+#result-message.wrong {
+  color: #e64a4a;
+  font-weight: bold;
+}
+
+.score-message {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.pass-message {
+  color: #50b83c;
+  font-weight: bold;
+}
+
+.fail-message {
+  color: #e64a4a;
+  font-weight: bold;
+}
+
+.Test-Conditions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Test-Conditions h2 {
+  color:white;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.Test-Conditions p {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+span{
+  color: red;
+}
+@media only screen and (max-width: 600px) {
+  .quiz-container {
+    margin: 50px auto;
+  }
+
+  #result-container {
+    margin-top: 50px;
+  }
+  .Test-Conditions h2 {
+    font-size: 20px;
+  }
+  
+  .Test-Conditions p {
+    font-size: 14px;
+  }
+}
