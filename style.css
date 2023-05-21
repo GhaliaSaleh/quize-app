@@ -5,6 +5,7 @@ body {
 
 
 .quize{
+  flex-direction: column;
   font-family: Arial, sans-serif;
   background-color: black;
   margin: 0;
@@ -12,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 h1 {
@@ -142,9 +143,23 @@ span {
 }
 
 @media only screen and (max-width: 600px) {
-  .quiz-container,
-  #result-container {
-    max-width: 100%;
-    margin: 0 20px;
+  .quize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
   }
+  
+  .quiz-container {
+   max-width: none;
+    width: 100%;
+    padding: 20px;
+    margin: 250px auto 0;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: rgba(173, 216, 230, 0.541);
+    transform: translateY(-50%);
+}
 }
