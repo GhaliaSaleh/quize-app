@@ -46,6 +46,10 @@ h1 {
   background-color: rgba(173, 216, 230, 0.541);
 }
 
+li label {
+    font-size: 20px;
+  }
+
 #result-container {
   display: none;
   margin-top: 50px;
@@ -149,19 +153,25 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-   
+    min-height: 100vh;   
   }
   
   .quiz-container {
-   max-width: 900;
+   max-width: 900px;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     margin: 250px auto 0;
     text-align: center;
     border: 2px solid #ccc;
     border-radius: 6px;
     background-color: rgba(173, 216, 230, 0.541);
     transform: translateY(-50%);
+  }
+  
+  li label {
+    font-size: 18px;
+  }
 }
-}
+
+
+
