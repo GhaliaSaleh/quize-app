@@ -26,8 +26,8 @@ h1 {
   color: white;
 }
 
-.top-message h2 {
-  font-size: 24px;
+.top-message h1 {
+ 
   font-weight: bold;
 }
 
@@ -38,7 +38,7 @@ h1 {
 }
 
 .quiz-container {
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
   padding: 20px;
   border: 2px solid #ccc;
@@ -63,12 +63,15 @@ ul {
 li {
   list-style: none;
   margin-bottom: 10px;
+  
+
 }
 
 #question {
   font-weight: bold;
   color: white;
 }
+
 
 button {
   display: block;
@@ -124,9 +127,8 @@ button:focus {
   margin-bottom: 20px;
 }
 
-.Test-Conditions h2 {
+.Test-Conditions h1 {
   color: white;
-  font-size: 24px;
   font-weight: bolder;
   margin-bottom: 10px;
 }
@@ -147,12 +149,12 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
    
   }
   
   .quiz-container {
-   max-width: none;
+   max-width: 900;
     width: 100%;
     padding: 20px;
     margin: 250px auto 0;
