@@ -1,8 +1,7 @@
 body {
- background-color: black;
- color: black;
+  background-color: black;
+  color: black;
 }
-
 
 .quize{
   flex-direction: column;
@@ -20,6 +19,10 @@ h1 {
   color: white;
 }
 
+#tit{
+  color:gold;
+}
+
 .top-message {
   text-align: center;
   margin-bottom: 30px;
@@ -27,7 +30,6 @@ h1 {
 }
 
 .top-message h1 {
- 
   font-weight: bold;
 }
 
@@ -38,17 +40,13 @@ h1 {
 }
 
 .quiz-container {
-  max-width: 800px;
+  max-width: 90%;
   width: 100%;
   padding: 20px;
   border: 2px solid #ccc;
   border-radius: 6px;
   background-color: rgba(173, 216, 230, 0.541);
 }
-
-li label {
-    font-size: 20px;
-  }
 
 #result-container {
   display: none;
@@ -67,15 +65,14 @@ ul {
 li {
   list-style: none;
   margin-bottom: 10px;
-  
-
 }
 
 #question {
   font-weight: bold;
   color: white;
+  font-size: 24px; /* Increase font size for mobile devices */
+  margin-bottom: 20px; /* Add more space between question and options */
 }
-
 
 button {
   display: block;
@@ -85,6 +82,7 @@ button {
   border-radius: 6px;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  font-size: 18px; /* Increase font size for mobile devices */
 }
 
 button:focus {
@@ -114,16 +112,21 @@ button:focus {
 .score-message {
   font-size: 18px;
   margin-top: 10px;
+  text-align: center;
 }
 
 .pass-message {
   color: #50b83c;
   font-weight: bold;
+  text-align: center;
+  font-size: 38px;
 }
 
 .fail-message {
   color: #e64a4a;
   font-weight: bold;
+  text-align: center;
+  font-size: 28px;
 }
 
 .Test-Conditions {
@@ -145,33 +148,21 @@ button:focus {
 }
 
 span {
-  color: red;
+  color: gold;
 }
 
 @media only screen and (max-width: 600px) {
-  .quize {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;   
-  }
-  
   .quiz-container {
-   max-width: 900px;
-    width: 100%;
-    padding: 40px;
-    margin: 250px auto 0;
-    text-align: center;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    background-color: rgba(173, 216, 230, 0.541);
-    transform: translateY(-50%);
+    max-width: 90%;
+    margin: 100px auto 0; 
+    padding: 10px; 
   }
-  
-  li label {
-    font-size: 18px;
+
+  #question {
+    font-size: 24px; /* Reduce font size of question for mobile devices */
+  }
+
+  button {
+    font-size: 20px; /* Reduce font size of options for mobile devices */
   }
 }
-
-
-
